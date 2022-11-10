@@ -1,0 +1,5 @@
+Wie erfolgt der Zugriff auf die Daten (Variablen) und Methoden der Klasse?
+
+Auf Klassenvariablen und methoden kann über Klassenname.variable oder Klassenname.methodenname zugegriffen werden.
+Auf Objektvariablen und methoden kann über Objektname.variable oder Objektname.methodenname zugegriffen werden.
+Dem Prinzip der Datenkapselung nach sollte jedoch jedes Objektattribut private sein und getter und setter Methoden haben, über die es manipuliert werden kann.

@@ -6,8 +6,6 @@ public class BruchRechner {
     public static void main(String[] args) {
         boolean programRunning = true;
         Bruch a = new Bruch();
-
-        int c = 4;
         Bruch b = new Bruch();
         while (programRunning) {
             // build menu

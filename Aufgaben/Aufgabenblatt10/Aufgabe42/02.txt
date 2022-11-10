@@ -1,0 +1,8 @@
+Was passiert durch die nachfolgenden Anweisungen?
+TennisSpieler maier;
+maier = new TennisSpieler();
+Warum benötigt man die zweite Anweisung überhaupt? 
+
+
+Durch die erste Anweisung wird ein Speicherplatz reserviert, auf dem ein Referenztyp der Art Tennisspieler abgelegt werden kann.
+Durch die zweite Anweisung wird ein Objekt vom Typ Tennisspieler erzeugt und die entsprechenden Referenzen auf den Speicherplatz geschrieben.

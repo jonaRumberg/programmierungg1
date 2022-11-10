@@ -1,0 +1,38 @@
+class Thomas {
+    Thomas() {
+        System.out.println("Thomas");
+    }
+}
+
+class Maria extends Thomas {
+    Maria() {
+        System.out.println("Maria");
+    }
+}
+
+class Susi extends Maria {
+    Thomas t = new Thomas();
+
+    Susi() {
+        System.out.println("Susi");
+    }
+}
+
+class TestSusi {
+    Maria m = new Maria();
+    static Thomas t = new Thomas();
+
+    public static void main(String[] args) {
+        Susi s = new Susi();
+    }
+}
+
+
+Beim Start der Klasse TestSusi wird 
+"
+Thomas -> Thomas als Klassenvariable
+Thomas -> Thomas als höchster Superkonstruktor bei der initialisierung von Susi
+Maria -> Maria als zweithöchster Superkonstruktor bei der initialisierung von Susi
+Thomas -> Thomas als Objektvariable von Susi
+Susi -> Susis eigener Konstruktor
+" ausgeben.

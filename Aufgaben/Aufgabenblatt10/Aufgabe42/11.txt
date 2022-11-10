@@ -1,0 +1,4 @@
+Erläutern Sie den Unterschied zwischen Instanzmethoden und Klassenmethoden.
+
+Eine Instanzmethode ist eine Methode, die auf einem Objekt ausgeführt wird.
+Eine Klassenmethode ist eine Methode, die auf einer Klasse ausgeführt wird. Sie verändert die Klasse und deren Variablen selbst.
