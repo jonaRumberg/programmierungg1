@@ -1,4 +1,4 @@
-package Aufgaben.Aufgabenblatt11.Aufgabe45;
+package Aufgaben.Aufgabenblatt11.Aufgabe45_46;
 
 public class Bildschirm {
   public static void loeschen() { // Schreibt 100 Leerzeilen auf den Bildschirm

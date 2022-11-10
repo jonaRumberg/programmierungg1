@@ -1,11 +1,10 @@
-package Aufgaben.Aufgabenblatt11.Aufgabe45;
+package Aufgaben.Aufgabenblatt11.Aufgabe45_46;
 
 public class DameFigur extends Spielfigur {
     final String NAME = "Dame";
 
     public DameFigur(char x, int y, String f) {
         super(x, y, f);
-        //TODO Auto-generated constructor stub
     }
     
     public void ziehe (char richtung, int anzahl) {
@@ -23,14 +22,22 @@ public class DameFigur extends Spielfigur {
                 y+=anzahl;
                 break;
             case '\\':
-                x+=anzahl;
-                y-=anzahl;
+                x-=anzahl;
+                y+=anzahl;
                 break;
         
             default:
                 System.out.println("Bitte gültige Richtung eingeben");
                 break;
         }
-        super.ziehe(1,2);
+        super.ziehe(x,y);
+    }
+
+    public boolean trifft(DameFigur a){
+        return this.getXpos() == a.getXpos() && this.getYpos() == a.getYpos();
+    }
+
+    public String toString() {
+        return this.getFarbe() + "e Dame auf Feld " + this.getXpos() + this.getYpos();
     }
 }

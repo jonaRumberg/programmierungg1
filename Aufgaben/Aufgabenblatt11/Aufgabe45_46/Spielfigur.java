@@ -1,4 +1,4 @@
-package Aufgaben.Aufgabenblatt11.Aufgabe45;
+package Aufgaben.Aufgabenblatt11.Aufgabe45_46;
 
 public class Spielfigur {
   private char xPos;

@@ -5,6 +5,6 @@ class TestSusi {
     static Thomas t = new Thomas();
 
     public static void main(String[] args) {
-        Susi s = new Susi();
+        //Susi s = new Susi();
     }
 }
