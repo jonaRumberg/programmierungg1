@@ -4,10 +4,6 @@ public class Kontostand extends Zahl {
 
     private double wert;
 
-    public double getWert() {
-        return wert;
-    }
-
     public Kontostand(double w) {
         this.wert = w;
     }
@@ -20,7 +16,7 @@ public class Kontostand extends Zahl {
     @Override
     public Zahl add(Zahl kont) {
         if (kont instanceof Kontostand) {
-            return new Kontostand(wert + ((Kontostand) kont).getWert());
+            return new Kontostand(wert + ((Kontostand) kont).wert);
         }
         return null;
 
@@ -34,7 +30,7 @@ public class Kontostand extends Zahl {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Kontostand) {
-            return wert == ((Kontostand) obj).getWert();
+            return wert == ((Kontostand) obj).wert;
         }
         return false;
     }
