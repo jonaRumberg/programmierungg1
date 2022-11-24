@@ -12,10 +12,10 @@ public class Gleichung {
 
     public Loesung berechneLoesung() throws UnloesbarException, NichtquadratischException {
         if ((b*b) - (4*a*c) < 0) {
-            throw new UnloesbarException();
+            throw new UnloesbarException(String.format("(%1f*%2f) - (4*%3f*%4f) < 0", b, b, a, c));
         }
-        if((b*b) - (4*a*c) == 0) {
-            throw new NichtquadratischException();
+        if(a == 0) {
+            throw new NichtquadratischException(String.format("%f = 0", a));
         }
         double x1 = (-b + Math.sqrt((b*b) - (4*a*c))) / (2*a);
         double x2 = (-b - Math.sqrt((b*b) - (4*a*c))) / (2*a);
